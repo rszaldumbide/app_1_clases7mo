@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Formulario de prueba</title>
+    <title>Validacion de cedula</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,21 +17,23 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <div class="container">
-            <h1 class="text-center my-5">Bienvenidos</h1>
-            <form action="GET" action="<?php echo base_url('/formulario') ?>">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-            </form>
-        </div>
+        <section class="container">
+            <center>
+                <h1>
+                    Datos Prueba
+                </h1>
+            </center>
+            <div>
+                <?php
+                echo "Nombre: " . $nombre . "<br>";
+                echo "Apellido: " . $apellido . "<br>";
+                echo "Clave: " . $clave . "<br>";
+                echo "Cedula: " .  $cedula . "<br>";
 
+                echo "Validacion: " . $caracteres. "<br>";
+                ?>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- place footer here -->

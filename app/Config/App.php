@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'https://localhost/app1/';
+    public string $baseURL = 'http://localhost/app1';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -70,7 +70,7 @@ class App extends BaseConfig
      * strings (like currency markers, numbers, etc), that your program
      * should run under for this request.
      */
-    public string $defaultLocale = 'es';
+    public string $defaultLocale = 'en';
 
     /**
      * --------------------------------------------------------------------------

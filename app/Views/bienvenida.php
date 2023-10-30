@@ -10,31 +10,48 @@
 </head>
 
 <body>
-
-
-    <!-- msj bienvenida -->
-    <center class="m-1">
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Esta es la pagina de bienvenida</p>
-    </center>
-
-    <!-- Formulario -->
-    
-    <form class="form m-2 text-center" action="<?php echo base_url("/form") ?>" method="GET" enctype="multipart/form-data">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <input type="text" name="apellido" placeholder="Apellido">
-        <input type="password" name="clave" placeholder="clave">
-        <br>
-        <br>
-        <label for="">Cedula: </label>
-        <input type="text" name="cedula" id="cedula" maxlength="10">
-        <br>
-        <input class="btn btn-success m-2" type="submit" value="Enviar" name="enviar">
-
-    </form>
-
-
-
+    <section class="container">
+        <!-- msj bienvenida -->
+        <div class="my-5 text-center">
+            <h1 class="text-xl">Bienvenido a mi sitio web</h1>
+            <p>Esta es la pagina de bienvenida</p>
+        </div>
+        <div class="text-center border-0 my-5">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 bg-dark p-5">
+                    <h2 class="text-center text-warning mb-4">Mi formulario</h2>
+                    <!-- Formulario -->
+                    <form action="<?php echo base_url() . "index.php/form" ?>" method="GET" enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1">Nombre: </span>
+                            <input class="form-control" type="text" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1">Apellido: </span>
+                            <input class="form-control" type="text" name="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1">Password: </span>
+                            <input class="form-control" type="password" name="clave" placeholder="clave">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-dark text-light" id="basic-addon1">Cédula: </span>
+                            <input class="form-control" maxlength="10" onkeyup="verificar()" onkeypress="return ingresoNumeros(event);" type="text" id="cedula" name="cedula" placeholder="Cedula">
+                        </div>
+                        <div class="text-center mb-2" style="align-items: center; justify-content: center;">
+                            <center><input class="btn btn-success" id="btnEnviar" style="width: 50%; display: none;" type="submit" value="Enviar" name="enviar">
+                            </center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+<script src="<?php echo base_url(); ?>assets/js/validacion.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>

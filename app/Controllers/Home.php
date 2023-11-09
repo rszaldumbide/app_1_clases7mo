@@ -21,12 +21,8 @@ class Home extends BaseController
         $clave = $this->request->getGet('clave');
         $cedula = $this->request->getGet('cedula');
 
-        //print_r(saludo());
-
         $c = validadorCedula($cedula);
         $m = ["nombre" => $nombre, "apellido" => $apellido, "clave" => $clave, "cedula" => $cedula, "caracteres" => $c, "saludo" => saludo()];
-
-        //  print_r($m);
 
         echo view('form', $m);
     }

@@ -1,0 +1,67 @@
+CRITICAL - 2023-11-09 00:12:34 --> Undefined variable $resp
+in APPPATH\Views\vistasPrueba\Resultado.php on line 28.
+ 1 APPPATH\Views\vistasPrueba\Resultado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\app1\\app\\Views\\vistasPrueba\\Resultado.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app1\\app\\Views\\vistasPrueba\\Resultado.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('vistasPrueba/Resultado', [], true)
+ 5 APPPATH\Controllers\Prueba.php(14): view('vistasPrueba/Resultado')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Resultado()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:13:07 --> Undefined variable $resp
+in APPPATH\Views\vistasPrueba\Resultado.php on line 28.
+ 1 APPPATH\Views\vistasPrueba\Resultado.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resp', 'C:\\xampp\\htdocs\\app1\\app\\Views\\vistasPrueba\\Resultado.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\app1\\app\\Views\\vistasPrueba\\Resultado.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('vistasPrueba/Resultado', [], true)
+ 5 APPPATH\Controllers\Prueba.php(14): view('vistasPrueba/Resultado')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Resultado()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:32:28 --> Invalid file: "layout/headervistasPrueba/Formulariolayout/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/headervistasPrueba/Formulariolayout/footer.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/headervistasPrueba/Formulariolayout/footer', [], true)
+ 3 APPPATH\Controllers\Prueba.php(9): view('layout/headervistasPrueba/Formulariolayout/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:32:40 --> Invalid file: "/layout/headervistasPrueba/Formulariolayout/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/layout/headervistasPrueba/Formulariolayout/footer.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/layout/headervistasPrueba/Formulariolayout/footer', [], true)
+ 3 APPPATH\Controllers\Prueba.php(9): view('/layout/headervistasPrueba/Formulariolayout/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:32:47 --> Invalid file: "/layout/headervistasPrueba/Formulario/layout/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/layout/headervistasPrueba/Formulario/layout/footer.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('/layout/headervistasPrueba/Formulario/layout/footer', [], true)
+ 3 APPPATH\Controllers\Prueba.php(9): view('/layout/headervistasPrueba/Formulario/layout/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:34:57 --> Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/header', [], true)
+ 3 APPPATH\Controllers\Prueba.php(9): view('layout/header')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 00:35:17 --> Invalid file: "layout/header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/header.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/header', [], true)
+ 3 APPPATH\Controllers\Prueba.php(9): view('layout/header')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Prueba->Formulario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

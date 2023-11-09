@@ -52,7 +52,8 @@ abstract class BaseController extends Controller
     {
 
         //$helpers = ['calculo'];
-        helper(['calculo']);
+        helper(['calculo', 'prueba']);
+
 
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);

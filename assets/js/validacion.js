@@ -47,7 +47,8 @@ function separarJS() {
     document.getElementById("btnEnviar").style.display = "block";
     document.getElementById("btnEnviar").style.margin = "auto";
   } else {
-    alert("Cédula invalida, revisar");
+    /* alert("Cédula invalida, revisar"); */
+    Swal.fire("Cédula invalida, revisar");
     document.getElementById("btnEnviar").style.display = "none";
   }
 }

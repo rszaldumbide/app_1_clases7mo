@@ -30,6 +30,7 @@
 <script src="<?php echo base_url(); ?>assets/js/scripts.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/validacion.js"></script>
 <script src="https://kit.fontawesome.com/063201bcd4.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>

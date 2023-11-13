@@ -3,26 +3,20 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
+    <?php echo $Navbar ?>
 
-    <section style="height: 100vh;">
-        <div style="align-items: center; justify-content: center;">
-            <h1 style=""><?php echo $resp ?></h1>
+    <!-- Masthead-->
+    <section class="section">
+        <div class="container">
+            <div class="row" style="margin-top: 150px;">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="my-5">
+                        <h1 class="text-center mb-5">Hola, bienvenido <?php echo $nombre ?></h1>
+                        <p class="text-center mb-5">Usted con el número de Cédula <b><?php echo $cedula ?></b> ha sido validada como Ecuatoriana. <br> <br>
+                            Y su fecha de naciemiento <b><?php echo $fecha ?></b> corresponde a un <b><?php echo $resp ?></b></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>

@@ -8,9 +8,9 @@ function bisiesto($fecha)
     $resp = "";
 
     if (($año % 4 == 0 && $año % 100 == 0) || $año % 400 == 0) {
-        $resp = "El año es bisiesto";
+        $resp = "año bisiesto";
     } else {
-        $resp = "El año no es bisiesto";
+        $resp = "año no bisiesto";
     }
 
     return $resp;

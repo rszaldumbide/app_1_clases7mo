@@ -1,19 +1,16 @@
-
 function validador(evt) {
-    
-  let cod = (evt.which) ? evt.which : evt.keyCode;
-  
+  let cod = evt.which ? evt.which : evt.keyCode;
+
   if (cod >= 48 && cod <= 57) {
-      return true;
+    return true;
   } else {
-      return false;
+    return false;
   }
 }
 
-function verificar(){
-  
+function verificar() {
   if (document.getElementById("cedula").value.length == 10) {
-      separarJS();
+    separarJS();
   }
 }
 
@@ -26,31 +23,31 @@ function separarJS() {
   let resta = 0;
 
   for (let i = 0; i < caracteres.length - 1; i++) {
-      if (i % 2 == 0) {
-          mul = caracteres[i] * 2;
-          if (mul > 9) {
-              mul = mul - 9;
-          }
-      } else {
-          mul = caracteres[i] * 1;
+    if (i % 2 == 0) {
+      mul = caracteres[i] * 2;
+      if (mul > 9) {
+        mul = mul - 9;
       }
+    } else {
+      mul = caracteres[i] * 1;
+    }
 
-      suma += mul;
+    suma += mul;
   }
 
   decima = (Math.floor(suma / 10) + 1) * 10;
   resta = decima - suma;
 
   if (resta == 10) {
-      resta = 0;
+    resta = 0;
   }
 
   if (resta == caracteres[9]) {
-      /* alert("Cédula valida, ingrese sin problema"); */
-      document.getElementById("btnEnviar").style.display="block";
+    /* alert("Cédula valida, ingrese sin problema"); */
+    document.getElementById("btnEnviar").style.display = "block";
+    document.getElementById("btnEnviar").style.margin = "auto";
   } else {
-      alert("Cédula invalida, revisar")
-      document.getElementById("btnEnviar").style.display="none";
+    alert("Cédula invalida, revisar");
+    document.getElementById("btnEnviar").style.display = "none";
   }
-
 }
